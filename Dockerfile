@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-MAINTAINER Aitor Duran <aitorduranmonge@gmail.com>
 
 # Instalacion de dependencias apache + php7 + modulo de apache con php ... 
 
