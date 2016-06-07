@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -yq curl && apt-get clean
+
+WORKDIR /app
+
+ADD test.sh /app/test.sh
+
+CMD [ "bash", "test.sh"]
