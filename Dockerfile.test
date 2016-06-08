@@ -1,9 +1,14 @@
+#Imagen base del dockerfile
 FROM ubuntu:latest
 
+#Instalacion de dependecias y reduccion de tamaño de la imagen con apt-get clean
 RUN apt-get update && apt-get install -yq curl && apt-get clean
 
+#Directorio de trabajo del contenedor
 WORKDIR /app
 
+#Añadir nuestro shellscript de test a la ruta del contenedor indicada
 ADD test.sh /app/test.sh
 
+#Comando de ejecucion del contenedor
 CMD [ "bash", "test.sh"]
