@@ -1,4 +1,4 @@
-test:
+sut:
   
     build: .
 
@@ -6,7 +6,7 @@ test:
 
     links: 
        - web
-
+    command: test.sh
 web:
 
     build: .
