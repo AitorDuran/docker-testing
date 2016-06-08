@@ -15,9 +15,6 @@ web:
       APACHE_LOCK_DIR: /var/lock/apache2
       APACHE_PID_FILE: /var/run/apache2.pid 
 
-    #volumes:
-      #- "./html:/var/www/app"
-
 db:
 
     image: mariadb
