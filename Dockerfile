@@ -3,7 +3,7 @@ FROM ubuntu:latest
 # Instalacion de dependencias apache + php7 + modulo de apache con php ... 
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-cur
+    apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-cur && apt-get clean
 
 # Configurar los modulos de apache con php.
 
