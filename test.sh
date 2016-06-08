@@ -1,8 +1,8 @@
 #!/bin/bash
 
-testing=$( curl http://web:80 | grep "This is Phantom, a free, fully responsive site" | wc -l )
+#testing=$( curl http://web:80 | grep "This is Phantom, a free, fully responsive site" | wc -l )
 
-if [ $testing -eq 1 ]; then
+if curl http://web:80 | grep "This is Phantom, a free, fully responsive site" ; then
 	echo "El test ha sido finalizado correctamente" 
 	exit 0
 
